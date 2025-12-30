@@ -105,6 +105,21 @@ export const Results = () => {
         </motion.div>
         
         
+        <motion.div
+          variants={fadeInUp}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          className="mt-12 flex justify-center"
+        >
+          <a
+            href="#oferta"
+            className="btn-primary group"
+          >
+            Quero Ver Mais Depoimentos
+            <Quote className="h-5 w-5 transition-transform group-hover:translate-x-1" />
+          </a>
+        </motion.div>
       </div>
     </section>
   );

@@ -111,6 +111,22 @@ export const Faq = () => {
           ))}
         </motion.div>
       </div>
+
+      <motion.div
+        variants={fadeInUp}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        className="mt-12 flex justify-center"
+      >
+        <a
+          href="#oferta"
+          className="btn-primary group"
+        >
+          Quero Todas as Respostas
+          <HelpCircle className="h-5 w-5 transition-transform group-hover:translate-x-1" />
+        </a>
+      </motion.div>
     </section>
   );
 };

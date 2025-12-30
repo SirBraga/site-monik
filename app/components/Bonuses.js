@@ -73,11 +73,11 @@ export const Bonuses = () => {
                 >
                   <div className="absolute -right-10 -top-10 h-32 w-32 rounded-full bg-white/5 blur-2xl transition-transform group-hover:scale-150" />
                   
-                  <div className="relative flex items-start gap-5">
-                    <div className="flex h-14 w-14 flex-shrink-0 items-center justify-center rounded-2xl bg-white/10">
+                  <div className="flex items-start gap-5">
+                    <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-white/10">
                       <Icon className="h-6 w-6 text-white" />
                     </div>
-                    <div className="flex-grow">
+                    <div className="grow">
                       <div className="flex items-center justify-between">
                         <span className="text-xs font-semibold uppercase tracking-wide text-white/60">
                           {bonus.label}
@@ -94,6 +94,22 @@ export const Bonuses = () => {
               );
             })}
           </motion.div>
+        </motion.div>
+
+        <motion.div
+          variants={fadeInUp}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          className="mt-12 flex justify-center"
+        >
+          <a
+            href="#oferta"
+            className="inline-flex items-center gap-2 bg-[hsl(var(--sage))] text-white px-6 py-3 rounded-full font-semibold hover:bg-[hsl(var(--sage)/0.8)] transition-colors group"
+          >
+            Quero os Bônus Exclusivos
+            <Gift className="h-5 w-5 transition-transform group-hover:translate-x-1" />
+          </a>
         </motion.div>
       </div>
     </section>

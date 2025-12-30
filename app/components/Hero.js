@@ -135,9 +135,7 @@ export const Hero = () => {
         >
           <motion.div variants={fadeInUp} className="flex flex-col items-center gap-4">
             <a
-              href="https://pay.hotmart.com/W99081498V?checkoutMode=10"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="#oferta"
               className="btn-primary group text-center"
             >
               Quero o guia completo

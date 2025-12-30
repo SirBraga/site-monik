@@ -87,6 +87,22 @@ export const Method = () => {
             );
           })}
         </motion.div>
+
+        <motion.div
+          variants={fadeInUp}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          className="mt-12 flex justify-center"
+        >
+          <a
+            href="#oferta"
+            className="btn-primary group"
+          >
+            Quero Aprender o Método Completo
+            <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
+          </a>
+        </motion.div>
       </div>
     </section>
   );
