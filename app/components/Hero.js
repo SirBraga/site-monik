@@ -72,7 +72,7 @@ export const Hero = () => {
                 <div className="aspect-video w-full bg-[hsl(var(--espresso))]">
                   <iframe
                     className="h-full w-full"
-                    src="https://www.youtube.com/embed/dEk2pf8xfRk?autoplay=1&mute=1&loop=1&playlist=dEk2pf8xfRk&controls=0&showinfo=0&modestbranding=1&rel=0&disablekb=1"
+                    src="https://www.youtube.com/embed/dEk2pf8xfRk?loop=1&playlist=dEk2pf8xfRk&controls=1&showinfo=0&modestbranding=1&rel=0"
                     title="Juba Natural Hair - Apresentação"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowFullScreen
@@ -114,7 +114,7 @@ export const Hero = () => {
               <div className="aspect-video w-full bg-[hsl(var(--espresso))]">
                 <iframe
                   className="h-full w-full"
-                  src="https://www.youtube.com/embed/dEk2pf8xfRk?autoplay=1&mute=1&loop=1&playlist=dEk2pf8xfRk&controls=0&showinfo=0&modestbranding=1&rel=0&disablekb=1"
+                  src="https://www.youtube.com/embed/dEk2pf8xfRk?loop=1&playlist=dEk2pf8xfRk&controls=1&showinfo=0&modestbranding=1&rel=0"
                   title="Juba Natural Hair - Apresentação"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   allowFullScreen
@@ -123,35 +123,8 @@ export const Hero = () => {
               </div>
             </div>
 
-            <motion.div 
-              variants={fadeInUp}
-              className="absolute -bottom-4 -left-4 rounded-xl bg-white p-4 shadow-medium"
-            >
-              <div className="flex items-center gap-3">
-                <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-gradient-cta">
-                  <BookOpen className="h-5 w-5 text-white" />
-                </div>
-                <div>
-                  <p className="text-sm font-semibold text-[hsl(var(--espresso))]">6 Capítulos</p>
-                  <p className="text-xs text-[hsl(var(--muted-foreground))]">Método completo</p>
-                </div>
-              </div>
-            </motion.div>
-
-            <motion.div 
-              variants={fadeInUp}
-              className="absolute -top-4 -right-4 rounded-xl bg-white p-4 shadow-medium"
-            >
-              <div className="flex items-center gap-3">
-                <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-[hsl(var(--olive)/0.1)]">
-                  <Video className="h-5 w-5 text-[hsl(var(--olive))]" />
-                </div>
-                <div>
-                  <p className="text-sm font-semibold text-[hsl(var(--espresso))]">Vídeos 4K</p>
-                  <p className="text-xs text-[hsl(var(--muted-foreground))]">Passo a passo</p>
-                </div>
-              </div>
-            </motion.div>
+           
+            
           </motion.div>
 
           <motion.div 
