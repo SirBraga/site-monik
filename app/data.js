@@ -84,15 +84,18 @@ export const bonuses = [
 export const routinePillars = [
   { 
     title: "HidroNutrição",
-    description: "Devolve os óleos e a maciez, repondo a camada lipídica essencial."
+    description: "Devolve a umidade e os lipídios, essenciais para brilho, maciez e controle do frizz.",
+    image: "/images/hidronutricao.webp"
   },
-  { 
-    title: "Reconstrução",
-    description: "Fortalece o fio danificado, repondo a massa capilar e proteínas."
-  },
-  { 
+  {
     title: "Umectação",
-    description: "Reposição de lipídios e selamento profundo da cutícula para mais brilho."
+    description: "Técnica com óleos vegetais para nutrir profundamente, combatendo o ressecamento severo.",
+    image: "/images/umectacao.webp"
+  },
+  {
+    title: "Reconstrução",
+    description: "Repõe a massa capilar (queratina) perdida, fortalecendo fios danificados e elásticos.",
+    image: "/images/reconstrucao.webp"
   },
 ];
 

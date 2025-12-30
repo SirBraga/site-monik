@@ -39,16 +39,6 @@ export const Hero = () => {
           animate="visible"
           className="mx-auto max-w-4xl text-center"
         >
-          <motion.div variants={fadeInUp} className="flex flex-wrap items-center justify-center gap-3 mb-6">
-            <span className="inline-flex items-center gap-1.5 rounded-full bg-[hsl(var(--paprika)/0.1)] px-3 py-1 text-xs font-semibold text-[hsl(var(--paprika))]">
-              <Star className="h-3 w-3 fill-current" />
-              4.9/5 avaliação
-            </span>
-            <span className="inline-flex items-center gap-1.5 rounded-full bg-[hsl(var(--olive)/0.1)] px-3 py-1 text-xs font-semibold text-[hsl(var(--olive))]">
-              <Users className="h-3 w-3" />
-              +500 alunas
-            </span>
-          </motion.div>
 
           <motion.h1 
             variants={fadeInUp}
@@ -91,14 +81,6 @@ export const Hero = () => {
             acessíveis e protocolos para clima, água e rotina norte-americana.
           </motion.p>
 
-          <motion.div variants={fadeInUp} className="mt-8 flex flex-wrap justify-center gap-x-6 gap-y-2">
-            {benefits.map((benefit) => (
-              <div key={benefit} className="flex items-center gap-2">
-                <CheckCircle className="h-4 w-4 flex-shrink-0 text-[hsl(var(--olive))]" />
-                <span className="text-sm text-[hsl(var(--espresso))]">{benefit}</span>
-              </div>
-            ))}
-          </motion.div>
         </motion.div>
 
         <motion.div
@@ -173,25 +155,11 @@ export const Hero = () => {
             </div>
           </motion.div>
 
-          <motion.div variants={fadeInUp} className="mt-8 flex items-center justify-center gap-4">
-            <div className="flex -space-x-2">
-              {['A', 'D', 'P', 'M'].map((letter) => (
-                <div 
-                  key={letter}
-                  className="flex h-8 w-8 items-center justify-center rounded-full border-2 border-white bg-gradient-cta text-xs font-semibold text-white shadow-md"
-                >
-                  {letter}
-                </div>
-              ))}
-            </div>
-            <p className="text-sm text-[hsl(var(--muted-foreground))]">
-              <span className="font-semibold text-[hsl(var(--espresso))]">+500 brasileiras</span> já transformaram seus cachos
-            </p>
-          </motion.div>
+         
         </motion.div>
       </div>
       
-      <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-[hsl(var(--cream))] to-transparent" />
+      <div className="absolute bottom-0 left-0 right-0 h-12 bg-gradient-to-t from-[hsl(var(--cream))] to-transparent" />
     </section>
   );
 };

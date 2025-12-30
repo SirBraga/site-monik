@@ -1,6 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 import { Droplets, Dumbbell, Sparkles, Check, Calendar } from 'lucide-react';
 import { routinePillars, routineBenefits } from '../data';
 
@@ -19,9 +20,8 @@ const stagger = {
   },
 };
 
-const pillarIcons = [Droplets, Dumbbell, Sparkles];
-
 export const Routine = () => {
+  const pillarIcons = [Droplets, Dumbbell, Sparkles];
   return (
     <section className="section-spacing bg-[hsl(var(--cream))]">
       <div className="container-section">
@@ -57,13 +57,21 @@ export const Routine = () => {
               <motion.div
                 key={pillar.title}
                 variants={fadeInUp}
-                className="card-base card-hover text-center shadow-soft hover:shadow-medium"
+                className="group relative flex aspect-3/4 flex-col justify-end overflow-hidden rounded-2xl p-6 text-white shadow-lg transition-all hover:shadow-xl"
               >
-                <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-cta">
-                  <Icon className="h-7 w-7 text-white" />
+                <Image 
+                  src={pillar.image}
+                  alt={pillar.title}
+                  fill
+                  className="object-cover transition-transform duration-500 group-hover:scale-110"
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent" />
+                <div className="relative z-10">
+                  <Icon className="mb-3 h-8 w-8 text-white/80" />
+                  <h3 className="text-2xl font-bold">{pillar.title}</h3>
+                  <p className="mt-2 text-sm text-white/80">{pillar.description}</p>
                 </div>
-                <h3 className="heading-card">{pillar.title}</h3>
-                <p className="text-body mt-3 text-sm">{pillar.description}</p>
               </motion.div>
             );
           })}

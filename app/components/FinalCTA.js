@@ -27,7 +27,7 @@ export const FinalCTA = () => {
   ];
 
   return (
-    <section className="section-spacing bg-gradient-dark relative overflow-hidden">
+    <section id="oferta" className="section-spacing bg-gradient-dark relative overflow-hidden">
       <div className="absolute inset-0 bg-noise opacity-[0.03]" />
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-[800px] w-[800px] rounded-full bg-[hsl(var(--paprika)/0.1)] blur-3xl" />
       
@@ -78,8 +78,12 @@ export const FinalCTA = () => {
                   Oferta Especial
                 </div>
                 
-                <div className="mt-6">
-                  <span className="text-sm text-white/60 line-through">de $197</span>
+                <p className="mt-4 text-2xl font-bold text-[hsl(var(--sage))]">Por Tempo Limitado!</p>
+                
+                <div className="mt-4">
+                  <p className="text-sm text-white/60">
+                    <span className="line-through">de $197</span> por apenas
+                  </p>
                   <div className="mt-1 flex items-baseline justify-center gap-1">
                     <span className="text-2xl font-semibold text-white/80">$</span>
                     <span className="text-7xl font-black tracking-tight text-white">97</span>

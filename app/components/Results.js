@@ -104,24 +104,7 @@ export const Results = () => {
           ))}
         </motion.div>
         
-        <motion.div
-          variants={fadeInUp}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          className="mt-12 flex flex-wrap items-center justify-center gap-8 rounded-2xl border border-[hsl(var(--border))] bg-[hsl(var(--white))] p-6 shadow-soft"
-        >
-          {[
-            { value: '+500', label: 'Alunas' },
-            { value: '97%', label: 'Satisfação' },
-            { value: '4.9', label: 'Avaliação' },
-          ].map((stat) => (
-            <div key={stat.label} className="text-center">
-              <p className="text-3xl font-bold text-[hsl(var(--paprika))]">{stat.value}</p>
-              <p className="text-sm text-[hsl(var(--muted-foreground))]">{stat.label}</p>
-            </div>
-          ))}
-        </motion.div>
+        
       </div>
     </section>
   );
