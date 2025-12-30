@@ -1,0 +1,224 @@
+'use client';
+
+import { motion } from 'framer-motion';
+import { ArrowRight, Shield, Clock, Gift, Play, Users, Star, BookOpen, Video, CheckCircle } from 'lucide-react';
+
+const fadeInUp = {
+  hidden: { opacity: 0, y: 30 },
+  visible: { 
+    opacity: 1, 
+    y: 0, 
+    transition: { duration: 0.6, ease: [0.25, 0.46, 0.45, 0.94] }
+  },
+};
+
+const stagger = {
+  visible: {
+    transition: { staggerChildren: 0.1 },
+  },
+};
+
+export const Hero = () => {
+  const benefits = [
+    'Protocolos para curvaturas 2A até 4C',
+    'Produtos acessíveis (CVS, Target, Ulta)',
+    'Rotinas para água dura e climas extremos',
+    '+6h de conteúdo em vídeo 4K',
+  ];
+
+  return (
+    <section className="relative overflow-hidden bg-gradient-hero">
+      <div className="absolute inset-0 bg-noise opacity-[0.02]" />
+      <div className="absolute top-0 right-0 h-[600px] w-[600px] rounded-full bg-[hsl(var(--paprika)/0.06)] blur-3xl" />
+      <div className="absolute bottom-0 left-0 h-[400px] w-[400px] rounded-full bg-[hsl(var(--olive)/0.06)] blur-3xl" />
+      
+      <div className="container-section relative z-10 py-16 lg:py-20">
+        <motion.div
+          variants={stagger}
+          initial="hidden"
+          animate="visible"
+          className="mx-auto max-w-4xl text-center"
+        >
+          <motion.div variants={fadeInUp} className="flex flex-wrap items-center justify-center gap-3 mb-6">
+            <span className="inline-flex items-center gap-1.5 rounded-full bg-[hsl(var(--paprika)/0.1)] px-3 py-1 text-xs font-semibold text-[hsl(var(--paprika))]">
+              <Star className="h-3 w-3 fill-current" />
+              4.9/5 avaliação
+            </span>
+            <span className="inline-flex items-center gap-1.5 rounded-full bg-[hsl(var(--olive)/0.1)] px-3 py-1 text-xs font-semibold text-[hsl(var(--olive))]">
+              <Users className="h-3 w-3" />
+              +500 alunas
+            </span>
+          </motion.div>
+
+          <motion.h1 
+            variants={fadeInUp}
+            className="text-4xl font-bold tracking-tight text-[hsl(var(--espresso))] sm:text-5xl lg:text-6xl"
+            style={{ lineHeight: 1.1 }}
+          >
+            O método brasileiro para{' '}
+            <span className="bg-gradient-to-r from-[hsl(var(--paprika))] to-[hsl(var(--espresso))] bg-clip-text text-transparent">
+              cabelos cacheados
+            </span>{' '}
+            nos EUA
+          </motion.h1>
+
+          <motion.div
+            variants={fadeInUp}
+            className="mx-auto mt-8 max-w-4xl lg:hidden"
+          >
+            <div className="relative">
+              <div className="absolute -inset-2 rounded-2xl bg-gradient-to-br from-[hsl(var(--paprika)/0.15)] to-[hsl(var(--olive)/0.15)] blur-xl" />
+              <div className="relative overflow-hidden rounded-2xl shadow-strong">
+                <div className="aspect-video w-full bg-[hsl(var(--espresso))]">
+                  <iframe
+                    className="h-full w-full"
+                    src="https://www.youtube.com/embed/dEk2pf8xfRk?autoplay=1&mute=1&loop=1&playlist=dEk2pf8xfRk&controls=0&showinfo=0&modestbranding=1&rel=0&disablekb=1"
+                    title="Juba Natural Hair - Apresentação"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowFullScreen
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+            </div>
+          </motion.div>
+
+          <motion.p 
+            variants={fadeInUp}
+            className="mx-auto mt-6 max-w-2xl text-lg text-[hsl(var(--muted-foreground))] leading-relaxed"
+          >
+            Guia completo com diagnóstico capilar, cronograma personalizado, curadoria de produtos 
+            acessíveis e protocolos para clima, água e rotina norte-americana.
+          </motion.p>
+
+          <motion.div variants={fadeInUp} className="mt-8 flex flex-wrap justify-center gap-x-6 gap-y-2">
+            {benefits.map((benefit) => (
+              <div key={benefit} className="flex items-center gap-2">
+                <CheckCircle className="h-4 w-4 flex-shrink-0 text-[hsl(var(--olive))]" />
+                <span className="text-sm text-[hsl(var(--espresso))]">{benefit}</span>
+              </div>
+            ))}
+          </motion.div>
+        </motion.div>
+
+        <motion.div
+          variants={stagger}
+          initial="hidden"
+          animate="visible"
+          className="mx-auto mt-10 max-w-4xl hidden lg:block"
+        >
+          <motion.div variants={fadeInUp} className="relative">
+            <div className="absolute -inset-3 rounded-3xl bg-gradient-to-br from-[hsl(var(--paprika)/0.2)] to-[hsl(var(--olive)/0.2)] blur-2xl" />
+            
+            <div className="relative overflow-hidden rounded-2xl shadow-strong">
+              <div className="aspect-video w-full bg-[hsl(var(--espresso))]">
+                <iframe
+                  className="h-full w-full"
+                  src="https://www.youtube.com/embed/dEk2pf8xfRk?autoplay=1&mute=1&loop=1&playlist=dEk2pf8xfRk&controls=0&showinfo=0&modestbranding=1&rel=0&disablekb=1"
+                  title="Juba Natural Hair - Apresentação"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowFullScreen
+                  loading="lazy"
+                />
+              </div>
+            </div>
+
+            <motion.div 
+              variants={fadeInUp}
+              className="absolute -bottom-4 -left-4 rounded-xl bg-white p-4 shadow-medium"
+            >
+              <div className="flex items-center gap-3">
+                <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-gradient-cta">
+                  <BookOpen className="h-5 w-5 text-white" />
+                </div>
+                <div>
+                  <p className="text-sm font-semibold text-[hsl(var(--espresso))]">6 Capítulos</p>
+                  <p className="text-xs text-[hsl(var(--muted-foreground))]">Método completo</p>
+                </div>
+              </div>
+            </motion.div>
+
+            <motion.div 
+              variants={fadeInUp}
+              className="absolute -top-4 -right-4 rounded-xl bg-white p-4 shadow-medium"
+            >
+              <div className="flex items-center gap-3">
+                <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-[hsl(var(--olive)/0.1)]">
+                  <Video className="h-5 w-5 text-[hsl(var(--olive))]" />
+                </div>
+                <div>
+                  <p className="text-sm font-semibold text-[hsl(var(--espresso))]">Vídeos 4K</p>
+                  <p className="text-xs text-[hsl(var(--muted-foreground))]">Passo a passo</p>
+                </div>
+              </div>
+            </motion.div>
+          </motion.div>
+
+          <motion.div 
+            variants={fadeInUp}
+            className="mt-8 grid grid-cols-3 gap-4 max-w-lg mx-auto"
+          >
+            {[
+              { icon: Gift, label: 'Bônus', value: '2 inclusos' },
+              { icon: Users, label: 'Comunidade', value: 'Telegram' },
+              { icon: Play, label: 'Conteúdo', value: '+6 horas' },
+            ].map((item) => (
+              <div key={item.label} className="rounded-xl border border-[hsl(var(--border))] bg-white/80 p-3 text-center">
+                <item.icon className="mx-auto h-5 w-5 text-[hsl(var(--paprika))]" />
+                <p className="mt-1 text-xs font-semibold text-[hsl(var(--espresso))]">{item.value}</p>
+                <p className="text-xs text-[hsl(var(--muted-foreground))]">{item.label}</p>
+              </div>
+            ))}
+          </motion.div>
+        </motion.div>
+
+        <motion.div
+          variants={stagger}
+          initial="hidden"
+          animate="visible"
+          className="mx-auto mt-10 max-w-2xl"
+        >
+          <motion.div variants={fadeInUp} className="flex flex-col items-center gap-4">
+            <a
+              href="https://pay.hotmart.com/W99081498V?checkoutMode=10"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-primary group text-center"
+            >
+              Quero o guia completo
+              <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
+            </a>
+            <div className="flex items-center gap-4 text-sm text-[hsl(var(--muted-foreground))]">
+              <span className="flex items-center gap-1.5">
+                <Shield className="h-4 w-4 text-[hsl(var(--olive))]" />
+                7 dias de garantia
+              </span>
+              <span className="flex items-center gap-1.5">
+                <Clock className="h-4 w-4 text-[hsl(var(--olive))]" />
+                Acesso vitalício
+              </span>
+            </div>
+          </motion.div>
+
+          <motion.div variants={fadeInUp} className="mt-8 flex items-center justify-center gap-4">
+            <div className="flex -space-x-2">
+              {['A', 'D', 'P', 'M'].map((letter) => (
+                <div 
+                  key={letter}
+                  className="flex h-8 w-8 items-center justify-center rounded-full border-2 border-white bg-gradient-cta text-xs font-semibold text-white shadow-md"
+                >
+                  {letter}
+                </div>
+              ))}
+            </div>
+            <p className="text-sm text-[hsl(var(--muted-foreground))]">
+              <span className="font-semibold text-[hsl(var(--espresso))]">+500 brasileiras</span> já transformaram seus cachos
+            </p>
+          </motion.div>
+        </motion.div>
+      </div>
+      
+      <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-[hsl(var(--cream))] to-transparent" />
+    </section>
+  );
+};

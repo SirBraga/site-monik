@@ -1,0 +1,136 @@
+'use client';
+
+import { motion } from 'framer-motion';
+import { Award, BookOpen, Users, Quote, MapPin } from 'lucide-react';
+import Image from 'next/image';
+
+const fadeInUp = {
+  hidden: { opacity: 0, y: 30 },
+  visible: { 
+    opacity: 1, 
+    y: 0, 
+    transition: { duration: 0.6, ease: [0.25, 0.46, 0.45, 0.94] }
+  },
+};
+
+const fadeInLeft = {
+  hidden: { opacity: 0, x: -50 },
+  visible: { 
+    opacity: 1, 
+    x: 0, 
+    transition: { duration: 0.7, ease: [0.25, 0.46, 0.45, 0.94] }
+  },
+};
+
+const fadeInRight = {
+  hidden: { opacity: 0, x: 50 },
+  visible: { 
+    opacity: 1, 
+    x: 0, 
+    transition: { duration: 0.7, ease: [0.25, 0.46, 0.45, 0.94] }
+  },
+};
+
+const stagger = {
+  visible: {
+    transition: { staggerChildren: 0.1 },
+  },
+};
+
+export const Mentor = () => {
+  return (
+    <section className="section-spacing bg-gradient-dark relative overflow-hidden">
+      <div className="absolute inset-0 bg-noise opacity-[0.03]" />
+      <div className="absolute top-0 right-0 h-[600px] w-[600px] rounded-full bg-[hsl(var(--paprika)/0.1)] blur-3xl" />
+      <div className="absolute bottom-0 left-0 h-[400px] w-[400px] rounded-full bg-[hsl(var(--sage)/0.08)] blur-3xl" />
+      
+      <div className="container-section relative z-10">
+        <motion.div
+          className="grid gap-12 lg:grid-cols-2 lg:items-center"
+          variants={stagger}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.3 }}
+        >
+          <motion.div variants={fadeInLeft} className="relative">
+            <div className="absolute -inset-4 rounded-3xl bg-gradient-to-br from-[hsl(var(--paprika)/0.3)] to-[hsl(var(--sage)/0.2)] blur-2xl" />
+            <div className="relative aspect-[3/4] w-full max-w-md mx-auto lg:max-w-none overflow-hidden rounded-2xl shadow-strong">
+              <Image 
+                src="/images/monik.webp"
+                alt="Monik Santos, mentora do guia Juba Natural Hair"
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, 50vw"
+                priority
+              />
+            </div>
+            
+            <motion.div 
+              variants={fadeInUp}
+              className="absolute -bottom-6 -right-6 lg:right-auto lg:-left-6 glass rounded-2xl p-4 shadow-medium"
+            >
+              <div className="flex items-center gap-3">
+                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-gradient-cta">
+                  <Users className="h-5 w-5 text-white" />
+                </div>
+                <div>
+                  <p className="text-2xl font-bold text-[hsl(var(--espresso))]">+500</p>
+                  <p className="text-xs text-[hsl(var(--muted-foreground))]">Alunas transformadas</p>
+                </div>
+              </div>
+            </motion.div>
+          </motion.div>
+
+          <motion.div variants={fadeInRight} className="text-white">
+            <p className="text-subtle !text-[hsl(var(--sage))]">
+              Sua Mentora
+            </p>
+            <h2 className="mt-4 text-4xl font-bold tracking-tight sm:text-5xl">
+              Monik Santos
+            </h2>
+            <div className="mt-2 flex items-center gap-2 text-[hsl(var(--linen)/0.7)]">
+              <MapPin className="h-4 w-4" />
+              <span>Boston, MA desde 2014</span>
+            </div>
+            
+            <p className="text-body mt-6 !text-[hsl(var(--linen)/0.8)]">
+              Brasileira em Boston, especialista em cosmetologia e tricologia avançada. 
+              Monik documentou cada desafio vivido fora do país para transformar em um método replicável.
+            </p>
+            
+            <div className="mt-8 grid gap-4 sm:grid-cols-2">
+              {[
+                {
+                  icon: Award,
+                  title: 'Especialidade',
+                  desc: 'Rituais para climas extremos e consultora em eventos afro em NY, DC e Miami.'
+                },
+                {
+                  icon: BookOpen,
+                  title: 'Formação',
+                  desc: 'Cosmetologia e Tricologia com certificações no Brasil e nos EUA.'
+                }
+              ].map((item) => (
+                <div key={item.title} className="rounded-xl border border-[hsl(var(--linen)/0.1)] bg-[hsl(var(--linen)/0.05)] p-4">
+                  <div className="flex items-center gap-3">
+                    <item.icon className="h-5 w-5 text-[hsl(var(--paprika))]" />
+                    <h3 className="font-semibold">{item.title}</h3>
+                  </div>
+                  <p className="mt-2 text-sm text-[hsl(var(--linen)/0.7)]">{item.desc}</p>
+                </div>
+              ))}
+            </div>
+
+            <div className="mt-8 relative rounded-xl border-l-4 border-[hsl(var(--paprika))] bg-[hsl(var(--linen)/0.05)] p-5">
+              <Quote className="absolute -top-3 -left-3 h-8 w-8 text-[hsl(var(--paprika)/0.3)]" />
+              <blockquote className="text-[hsl(var(--linen)/0.9)] italic">
+                "Passei pelos mesmos desafios que você está enfrentando aí fora. 
+                Este guia é o atalho que eu queria ter recebido quando cheguei."
+              </blockquote>
+            </div>
+          </motion.div>
+        </motion.div>
+      </div>
+    </section>
+  );
+};
