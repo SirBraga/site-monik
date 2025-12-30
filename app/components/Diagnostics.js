@@ -138,7 +138,7 @@ export const Diagnostics = () => {
             href="#oferta"
             className="btn-primary group"
           >
-            Quero Meu Diagnóstico Personalizado
+            Quero Meu Diagnóstico
             <CircleDot className="h-5 w-5 transition-transform group-hover:translate-x-1" />
           </a>
         </motion.div>

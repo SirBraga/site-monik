@@ -99,7 +99,7 @@ export const Method = () => {
             href="#oferta"
             className="btn-primary group"
           >
-            Quero Aprender o Método Completo
+            Quero Aprender o Método
             <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
           </a>
         </motion.div>
