@@ -40,6 +40,7 @@ export const testimonials = [
     quote:
       "“Nunca tinha conseguido definir meus cachos morando aqui. Depois do guia entendi o que comprar, como aplicar e criei disciplina sem perder horas.”",
     result: "Frizz reduzido em 72% + cronograma financeiro",
+    image: "/images/testimonials/t1.webp",
   },
   {
     name: "Daniela Costa",
@@ -47,6 +48,7 @@ export const testimonials = [
     quote:
       "“O ritual noturno e o protocolo contra água dura salvaram meu cabelo. Hoje sei conversar com hairstylists e mantenho meu volume natural.”",
     result: "Cutículas seladas + 6cm de crescimento saudável",
+    image: "/images/testimonials/t2.webp",
   },
   {
     name: "Patrícia Nunes",
@@ -54,6 +56,47 @@ export const testimonials = [
     quote:
       "“Eu vivia fazendo big chop por frustração. Agora tenho clareza das etapas e uso produtos acessíveis daqui com confiança.”",
     result: "Finalização consistente + autoestima renovada",
+    image: "/images/testimonials/t3.webp",
+  },
+  {
+    name: "Juliana Ribeiro",
+    city: "Newark, NJ",
+    quote:
+      "“Descobri produtos locais que funcionam e aprendi a adaptar o cronograma para o inverno. Meus cachos voltaram a ter vida.”",
+    result: "Brilho e definição mesmo no frio",
+    image: "/images/testimonials/t4.webp",
+  },
+  {
+    name: "Larissa Martins",
+    city: "Houston, TX",
+    quote:
+      "“Com a rotina de 30 dias, parei de gastar com compras erradas. O guia me deu segurança para conversar com cabeleireiros aqui.”",
+    result: "Menos frizz + economia real",
+    image: "/images/testimonials/t5.webp",
+  },
+  {
+    name: "Camila Fernandes",
+    city: "Miami, FL",
+    quote:
+      "“O passo a passo de finalização salvou meu day after. Hoje consigo manter o volume e a definição no clima úmido.”",
+    result: "Day after consistente e definido",
+    image: "/images/testimonials/t6.webp",
+  },
+  {
+    name: "Roberta Lima",
+    city: "Chicago, IL",
+    quote:
+      "“Aprendi a lidar com a água dura e a proteger os fios no vento frio. Meu cabelo está mais forte e com menos quebra.”",
+    result: "Menos quebra + selagem de cutícula",
+    image: "/images/testimonials/t7.webp",
+  },
+  {
+    name: "Fernanda Rocha",
+    city: "Los Angeles, CA",
+    quote:
+      "“Os bônus de penteados e mapa de compras facilitaram minha rotina. Sinto que finalmente entendi o que meu cabelo precisa.”",
+    result: "Rotina prática e compras certeiras",
+    image: "/images/testimonials/t8.webp",
   },
 ];
 
@@ -68,16 +111,16 @@ export const modules = [
 
 export const bonuses = [
   {
-    label: "Guia tático",
-    title: "Mapa das Farmácias",
-    description: "Lista viva com produtos aprovados na CVS, Target, Ulta e Amazon + conversão de preços.",
-    value: "$250 de economia",
+    label: "Mapa",
+    title: "Mapa para cronograma personalizado",
+    description: "Personalize seu cronograma capilar com este mapa interativo e eficaz.",
+    value: "Incluso",
   },
     {
-    label: "Vídeoteca",
-    title: "Estúdio Juba 4K",
-    description: "Sequências completas de finalização, proteção noturna e revitalização acelerada.",
-    value: "Atualizações mensais",
+    label: "Penteados",
+    title: "Penteados práticos para o day after",
+    description: "Dicas práticas e rápidas para penteados no day after.",
+    value: "Incluso",
   },
 ];
 

@@ -44,7 +44,7 @@ export const FinalCTA = () => {
               Sua transformação começa agora
             </p>
             <h2 className="mt-4 text-4xl font-bold tracking-tight sm:text-5xl leading-tight">
-              A próxima lavagem pode ser a melhor da sua vida
+              Um guia completo de Cabelos Naturais nos EUA
             </h2>
             <p className="mt-6 text-lg text-[hsl(var(--linen)/0.8)]">
               Garanta acesso imediato ao guia, bônus, comunidade e acompanhamento 
@@ -86,10 +86,10 @@ export const FinalCTA = () => {
                   </p>
                   <div className="mt-1 flex items-baseline justify-center gap-1">
                     <span className="text-2xl font-semibold text-white/80">$</span>
-                    <span className="text-7xl font-black tracking-tight text-white">97</span>
+                    <span className="text-7xl font-black tracking-tight text-white">47</span>
                   </div>
                   <p className="mt-2 text-white/70">
-                    ou <span className="font-semibold text-white">12x de $9,70</span>
+                    ou <span className="font-semibold text-white">12x de $4,70</span>
                   </p>
                 </div>
 

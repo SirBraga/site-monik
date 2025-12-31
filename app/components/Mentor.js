@@ -83,19 +83,21 @@ export const Mentor = () => {
 
           <motion.div variants={fadeInRight} className="text-white">
             <p className="text-subtle !text-[hsl(var(--sage))]">
-              Sua Mentora
+              História de transformação nos EUA
             </p>
-            <h2 className="mt-4 text-4xl font-bold tracking-tight sm:text-5xl">
-              Monik Santos
+            <p className="text-xl mt-4 text-white">
+              Meu nome é
+            </p>
+            <h2 className=" text-4xl font-bold tracking-tight sm:text-5xl">
+              Monik Santana
             </h2>
             <div className="mt-2 flex items-center gap-2 text-[hsl(var(--linen)/0.7)]">
               <MapPin className="h-4 w-4" />
-              <span>Boston, MA desde 2014</span>
+              <span>New Jersey</span>
             </div>
             
             <p className="text-body mt-6 !text-[hsl(var(--linen)/0.8)]">
-              Brasileira em Boston, especialista em cosmetologia e tricologia avançada. 
-              Monik documentou cada desafio vivido fora do país para transformar em um método replicável.
+              Brasileira, especialista em cabelos ondulados, cacheados e crespos. Parte da minha jornada no guia: adaptei rotinas, produtos e cuidados para os desafios reais das brasileiras vivendo nos EUA.
             </p>
             
             <div className="mt-8 grid gap-4 sm:grid-cols-2">
@@ -103,7 +105,7 @@ export const Mentor = () => {
                 {
                   icon: Award,
                   title: 'Especialidade',
-                  desc: 'Rituais para climas extremos e consultora em eventos afro em NY, DC e Miami.'
+                  desc: 'Especialista em cabelo ondulados, cacheados e crespos.'
                 },
                 {
                   icon: BookOpen,
@@ -124,8 +126,8 @@ export const Mentor = () => {
             <div className="mt-8 relative rounded-xl border-l-4 border-[hsl(var(--paprika))] bg-[hsl(var(--linen)/0.05)] p-5">
               <Quote className="absolute -top-3 -left-3 h-8 w-8 text-[hsl(var(--paprika)/0.3)]" />
               <blockquote className="text-[hsl(var(--linen)/0.9)] italic">
-                "Passei pelos mesmos desafios que você está enfrentando aí fora. 
-                Este guia é o atalho que eu queria ter recebido quando cheguei."
+                &quot;Passei pelos mesmos desafios que você está enfrentando aí fora. 
+                Este guia é o atalho que eu queria ter recebido quando cheguei.&quot;
               </blockquote>
             </div>
           </motion.div>

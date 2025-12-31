@@ -33,7 +33,7 @@ export const Method = () => {
           viewport={{ once: true, amount: 0.3 }}
         >
           <motion.p variants={fadeInUp} className="text-subtle">
-            Mapa do Método
+            Como Cuidar
           </motion.p>
           <motion.h2 variants={fadeInUp} className="heading-section mt-4 text-balance">
             Diagnóstico, ritual e styling<br className="hidden sm:block" /> sem adivinhação

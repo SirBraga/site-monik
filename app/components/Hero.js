@@ -45,12 +45,19 @@ export const Hero = () => {
             className="text-4xl font-bold tracking-tight text-[hsl(var(--espresso))] sm:text-5xl lg:text-6xl"
             style={{ lineHeight: 1.1 }}
           >
-            O método brasileiro para{' '}
+            Um guia completo de{' '}
             <span className="bg-gradient-to-r from-[hsl(var(--paprika))] to-[hsl(var(--espresso))] bg-clip-text text-transparent">
-              cabelos cacheados
+              Cabelos Naturais
             </span>{' '}
             nos EUA
           </motion.h1>
+
+          <motion.p 
+            variants={fadeInUp}
+            className="mx-auto mt-6 max-w-2xl text-lg text-[hsl(var(--muted-foreground))] leading-relaxed"
+          >
+            Aprenda a cuidar dos seus cachos com os produtos certos, entendendo a realidade do clima, da água e do mercado americano.
+          </motion.p>
 
           <motion.div
             variants={fadeInUp}

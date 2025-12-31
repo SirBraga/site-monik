@@ -20,8 +20,8 @@ const stagger = {
 };
 
 const bonusIcons = {
-  "Guia tático": Map,
-  "Vídeoteca": Video,
+  "Mapa": Map,
+  "Penteados": Video,
 };
 
 export const Bonuses = () => {
@@ -45,7 +45,7 @@ export const Bonuses = () => {
               Bônus Exclusivos
             </div>
             <h2 className="mt-6 text-4xl font-bold tracking-tight sm:text-5xl">
-              Ferramentas que aceleram seus resultados
+              Bônus:
             </h2>
             <p className="mt-6 text-lg text-white/80">
               Além do guia completo, você recebe acesso a materiais de apoio que 

@@ -60,15 +60,15 @@ export const Diagnostics = () => {
         </motion.div>
 
         <motion.div 
-          className="mt-16 grid gap-12 lg:grid-cols-2 lg:items-start"
+          className="mt-16 space-y-8"
           variants={stagger}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
         >
-          <motion.div variants={fadeInUp} className="space-y-6">
+          <motion.div className="grid gap-6 md:grid-cols-3">
             {diagnosticPoints.map((point, i) => (
-              <div key={point.title} className="card-base shadow-soft">
+              <div key={point.title} className="card-base shadow-soft h-full flex flex-col">
                 <div className="flex items-center gap-3">
                   <span className="flex h-8 w-8 items-center justify-center rounded-full bg-gradient-cta text-sm font-bold text-white">
                     {i + 1}
@@ -76,7 +76,7 @@ export const Diagnostics = () => {
                   <h3 className="heading-card text-lg">{point.title}</h3>
                 </div>
                 <p className="text-body mt-3 text-sm">{point.question}</p>
-                <div className="mt-4 space-y-2">
+                <div className="space-y-2 mt-auto">
                   {point.options.map(option => (
                     <div 
                       key={option} 
@@ -91,37 +91,16 @@ export const Diagnostics = () => {
             ))}
           </motion.div>
 
-          <motion.div variants={fadeInUp} className="space-y-6">
-            <div className="card-base shadow-soft">
-              <div className="flex items-center gap-3">
-                <span className="flex h-8 w-8 items-center justify-center rounded-full bg-gradient-cta text-sm font-bold text-white">
-                  4
-                </span>
-                <h3 className="heading-card text-lg">Qual a sua curvatura?</h3>
+          <motion.div variants={fadeInUp} className="card-base max-w-xl mx-auto border-[hsl(var(--olive)/0.3)] bg-[hsl(var(--olive)/0.05)] shadow-soft">
+            <div className="flex items-start gap-4">
+              <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-[hsl(var(--olive)/0.15)]">
+                <Lightbulb className="h-5 w-5 text-[hsl(var(--olive))]" />
               </div>
-              <div className="relative mt-6 overflow-hidden rounded-xl">
-                <Image 
-                  src="/images/curl_types.png"
-                  alt="Tabela de curvatura de cabelo, de 2A a 4C"
-                  width={1019}
-                  height={1280}
-                  className="w-full h-auto"
-                  priority={false}
-                />
-              </div>
-            </div>
-            
-            <div className="card-base border-[hsl(var(--olive)/0.3)] bg-[hsl(var(--olive)/0.05)] shadow-soft">
-              <div className="flex items-start gap-4">
-                <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-xl bg-[hsl(var(--olive)/0.15)]">
-                  <Lightbulb className="h-5 w-5 text-[hsl(var(--olive))]" />
-                </div>
-                <div>
-                  <p className="font-semibold text-[hsl(var(--espresso))]">Dica importante</p>
-                  <p className="mt-1 text-sm text-[hsl(var(--muted-foreground))]">
-                    Guarde essas informações para escolher os produtos ideais para você dentro do guia!
-                  </p>
-                </div>
+              <div>
+                <p className="font-semibold text-[hsl(var(--espresso))]">Dica importante</p>
+                <p className="mt-1 text-sm text-[hsl(var(--muted-foreground))]">
+                  Guarde essas informações para escolher os produtos ideais para você dentro do guia!
+                </p>
               </div>
             </div>
           </motion.div>

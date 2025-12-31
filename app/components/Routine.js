@@ -36,7 +36,7 @@ export const Routine = () => {
             Cronograma Capilar
           </motion.p>
           <motion.h2 variants={fadeInUp} className="heading-section mt-4 text-balance">
-            A Rotina que Traz Resultados
+            Resultados Esperados
           </motion.h2>
           <motion.p variants={fadeInUp} className="text-body mx-auto mt-6 max-w-2xl text-balance">
             O segredo não é mágica, é constância. Entenda os três pilares do cronograma capilar 
@@ -66,7 +66,7 @@ export const Routine = () => {
                   className="object-cover transition-transform duration-500 group-hover:scale-110"
                   sizes="(max-width: 768px) 100vw, 33vw"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent" />
+                <div className="absolute inset-0 bg-linear-to-t from-black/70 via-black/40 to-transparent" />
                 <div className="relative z-10">
                   <Icon className="mb-3 h-8 w-8 text-white/80" />
                   <h3 className="text-2xl font-bold">{pillar.title}</h3>

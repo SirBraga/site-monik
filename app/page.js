@@ -13,11 +13,11 @@ export default function Home() {
   return (
     <main className="min-h-screen">
       <Hero />
+      <Mentor />
       <Method />
       <Diagnostics />
       <Routine />
       <Results />
-      <Mentor />
       <Content />
       <Bonuses />
       <Faq />
