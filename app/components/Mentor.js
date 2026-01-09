@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Award, BookOpen, Users, Quote, MapPin } from 'lucide-react';
+import { Award, BookOpen, Users, Quote, MapPin, ArrowRight } from 'lucide-react';
 import Image from 'next/image';
 
 const fadeInUp = {
@@ -83,10 +83,10 @@ export const Mentor = () => {
 
           <motion.div variants={fadeInRight} className="text-white">
             <p className="text-subtle !text-[hsl(var(--sage))]">
-              História de transformação nos EUA
+              EXPERIENCIA COMPROVADA NO MERCADO NORTE-AMERICANO
             </p>
-            <p className="text-xl mt-4 text-white">
-              Meu nome é
+            <p className="text-lg mt-4 text-white">
+              Muito prazer, eu sou
             </p>
             <h2 className=" text-4xl font-bold tracking-tight sm:text-5xl">
               Monik Santana
@@ -97,7 +97,7 @@ export const Mentor = () => {
             </div>
             
             <p className="text-body mt-6 !text-[hsl(var(--linen)/0.8)]">
-              Brasileira, especialista em cabelos ondulados, cacheados e crespos. Parte da minha jornada no guia: adaptei rotinas, produtos e cuidados para os desafios reais das brasileiras vivendo nos EUA.
+              Brasileira, especialista e apaixonada por cabelos ondulados, cacheados e crespos! Te convido a descobrir o prazer de cuidar dos seus cachos com todo o amor que eles merecem. No guia, compartilho um pouco da minha experiência nos EUA: adaptei rotinas, produtos e cuidados aos desafios reais das brasileiras vivendo na América.
             </p>
             
             <div className="mt-8 grid gap-4 sm:grid-cols-2">
@@ -105,7 +105,7 @@ export const Mentor = () => {
                 {
                   icon: Award,
                   title: 'Especialidade',
-                  desc: 'Especialista em cabelo ondulados, cacheados e crespos.'
+                  desc: 'Especialista em cabelos naturais ondulados, cacheados e crespos.'
                 },
                 {
                   icon: BookOpen,
@@ -126,10 +126,21 @@ export const Mentor = () => {
             <div className="mt-8 relative rounded-xl border-l-4 border-[hsl(var(--paprika))] bg-[hsl(var(--linen)/0.05)] p-5">
               <Quote className="absolute -top-3 -left-3 h-8 w-8 text-[hsl(var(--paprika)/0.3)]" />
               <blockquote className="text-[hsl(var(--linen)/0.9)] italic">
-                &quot;Passei pelos mesmos desafios que você está enfrentando aí fora. 
-                Este guia é o atalho que eu queria ter recebido quando cheguei.&quot;
+                &quot;Quero compartilhar com você respostas às perguntas que tive ao me mudar para os EUA, mas não tinha a quem perguntar. Vem comigo e dê o primeiro passo para ter cabelos deslumbrantes e saudáveis!&quot;
               </blockquote>
             </div>
+
+            <motion.div variants={fadeInUp} className="mt-8">
+              <a
+                href="https://pay.hotmart.com/I103599333T?bid=1767448472379"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-primary group inline-flex"
+              >
+                Quero o Guia Completo
+                <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
+              </a>
+            </motion.div>
           </motion.div>
         </motion.div>
       </div>

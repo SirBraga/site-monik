@@ -22,7 +22,7 @@ export const methodSteps = [
   {
     title: "Ritual Inteligente",
     description:
-      "Rotinas modulares para manhã, noite e dias de correria. Tudo guiado por timers e combinações aprovadas pela Monik.",
+      "Rotinas modulares para manhã, noite e dias de correria. Tudo guiado por <span class=\"italic\">timers</span> e combinações testadas e aprovadas.",
     items: ["Cronograma semanal adaptável", "Day after em 12 minutos", "Finalização dividida em zonas"],
   },
   {
@@ -111,9 +111,9 @@ export const modules = [
 
 export const bonuses = [
   {
-    label: "Mapa",
-    title: "Mapa para cronograma personalizado",
-    description: "Personalize seu cronograma capilar com este mapa interativo e eficaz.",
+    label: "Calendário",
+    title: "Calendário personalizado do cronograma capilar",
+    description: "Organize sua rotina capilar com um calendário prático que se adapta ao seu estilo de vida e necessidades dos seus fios.",
     value: "Incluso",
   },
     {
@@ -143,7 +143,7 @@ export const routinePillars = [
 ];
 
 export const routineBenefits = [
-  "Mais definição natural",
+  "Definição natural",
   "Menos frizz",
   "Cabelo com brilho e balanço",
   "Menos embaraço do cabelo",
@@ -186,8 +186,12 @@ export const faqs = [
     a: "Os pilares exigem cerca de 90 minutos semanais + micro hábitos de 5 minutos. Também há planos para agendas super corridas.",
   },
   {
-    q: "Recebo ajuda direta?",
-    a: "Sim. O grupo no Telegram tem plantões com Monik, além de feedback nas planilhas compartilhadas.",
+    q: "Terei acesso a uma lista específica de quais produtos comprar?",
+    a: "Sim! O guia possui capítulos inteiros dedicados a isso. Você encontrará informações sobre os produtos testados e aprovados que realmente funcionam nos EUA e também uma lista completa de produtos recomendados. O objetivo é justamente evitar que você gaste dinheiro com itens que não funcionam para o seu tipo de cabelo.",
+  },
+  {
+    q: "Não tenho nenhum tipo de conhecimento sobre o assunto, mesmo assim, conseguirei executar o cronograma?",
+    a: "Sim, com toda certeza. O guia foi desenvolvido de forma prática e acolhedora, como uma \"conversa de mulher para mulher\". Ele ensina desde o básico, como identificar o seu tipo de cabelo, até como montar um cronograma capilar simples e ideal para quem tem a rotina agitada na América. A proposta é focar no básico com constância, usando técnicas simples que podem ser feitas até durante o banho.",
   },
   {
     q: "Como acesso o conteúdo?",

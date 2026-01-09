@@ -123,7 +123,7 @@ export const Faq = () => {
           href="#oferta"
           className="btn-primary group"
         >
-          Quero Todas as Respostas
+          Quero Garantir Meu Acesso
           <HelpCircle className="h-5 w-5 transition-transform group-hover:translate-x-1" />
         </a>
       </motion.div>

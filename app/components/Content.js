@@ -1,8 +1,11 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Clock, PlayCircle, BookOpen } from 'lucide-react';
+import { Clock, BookOpen } from 'lucide-react';
+import { FaSearch, FaHandSparkles, FaPlayCircle, FaShoppingBag, FaListUl, FaSun, FaCut } from 'react-icons/fa';
+import { BsBrush, BsHairbrush } from 'react-icons/bs';
 import { modules } from '../data';
+import { GiComb } from "react-icons/gi";
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 30 },
@@ -20,19 +23,6 @@ const stagger = {
 };
 
 export const Content = () => {
-  const totalTime = modules.reduce((acc, m) => {
-    const match = m.length.match(/(\d+)h?(\d*)/);
-    if (match) {
-      const hours = match[1] ? parseInt(match[1]) : 0;
-      const mins = match[2] ? parseInt(match[2]) : 0;
-      return acc + hours * 60 + mins;
-    }
-    return acc;
-  }, 0);
-  
-  const hours = Math.floor(totalTime / 60);
-  const mins = totalTime % 60;
-
   return (
     <section className="section-spacing bg-[hsl(var(--cream))]">
       <div className="container-section">
@@ -47,7 +37,7 @@ export const Content = () => {
             Conteúdo do Guia
           </motion.p>
           <motion.h2 variants={fadeInUp} className="heading-section mt-4 text-balance">
-            Arquitetura pensada para<br className="hidden sm:block" /> 90 dias de evolução
+            Cronograma pensado para<br className="hidden sm:block" /> 90 dias de evolução
           </motion.h2>
           <motion.p variants={fadeInUp} className="text-body mx-auto mt-6 max-w-2xl text-balance">
             Cada módulo foi desenhado para você avançar de forma progressiva e consistente.
@@ -65,14 +55,10 @@ export const Content = () => {
             <BookOpen className="h-3.5 w-3.5" />
             {modules.length} Capítulos
           </div>
-          <div className="badge badge-primary">
-            <Clock className="h-3.5 w-3.5" />
-            +{hours}h de conteúdo
-          </div>
         </motion.div>
 
         <motion.div
-          className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3"
+          className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3"
           variants={stagger}
           initial="hidden"
           whileInView="visible"
@@ -80,27 +66,45 @@ export const Content = () => {
         >
           {modules.map((module, i) => {
             const [chapter, title] = module.title.split('•').map(s => s.trim());
+            
+            // Map icons to themes
+            const getIcon = (title) => {
+              if (title.includes('Introdução')) return FaSearch;
+              if (title.includes('Lavagem')) return FaHandSparkles;
+              if (title.includes('Finalização')) return GiComb;
+              if (title.includes('Produtos')) return FaShoppingBag;
+              if (title.includes('Lista')) return FaListUl;
+              if (title.includes('Day After')) return FaSun;
+              return BookOpen;
+            };
+            
+            const Icon = getIcon(title);
+            
             return (
               <motion.div
                 key={module.title}
                 variants={fadeInUp}
-                className="group card-base card-hover flex items-start gap-4 shadow-soft hover:shadow-medium"
+                className="group relative overflow-hidden rounded-2xl bg-white border border-[hsl(var(--border))] shadow-soft hover:shadow-strong transition-all duration-300 hover:-translate-y-1"
               >
-                <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-xl bg-gradient-cta text-white transition-transform group-hover:scale-110">
-                  <PlayCircle className="h-5 w-5" />
-                </div>
-                <div className="flex-grow">
-                  <div className="flex items-center justify-between">
-                    <span className="text-xs font-semibold uppercase tracking-wide text-[hsl(var(--paprika))]">
-                      {chapter}
-                    </span>
-                    <div className="flex items-center gap-1 text-xs text-[hsl(var(--muted-foreground))]">
-                      <Clock className="h-3 w-3" />
-                      <span>{module.length}</span>
+                <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-cta" />
+                <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-br from-[hsl(var(--paprika)/0.05)] to-transparent rounded-bl-full" />
+                
+                <div className="relative p-6">
+                  <div className="flex items-start justify-between mb-4">
+                    <div className="flex h-14 w-14 items-center justify-center rounded-xl bg-gradient-to-br from-[hsl(var(--paprika))] to-[hsl(var(--espresso))] text-white shadow-md transition-transform group-hover:scale-110 group-hover:rotate-3">
+                      <Icon className="h-6 w-6" />
                     </div>
+                    <span className="inline-flex items-center justify-center h-6 px-2.5 rounded-full bg-[hsl(var(--paprika)/0.1)] text-xs font-bold text-[hsl(var(--paprika))] uppercase tracking-wider">
+                      {chapter.replace('Capítulo ', 'Cap ')}
+                    </span>
                   </div>
-                  <h3 className="mt-1 font-semibold text-[hsl(var(--espresso))]">{title}</h3>
-                  <p className="mt-1 text-sm text-[hsl(var(--muted-foreground))]">{module.detail}</p>
+                  
+                  <h3 className="text-lg font-bold text-[hsl(var(--espresso))] mb-2 leading-tight">
+                    {title}
+                  </h3>
+                  <p className="text-sm text-[hsl(var(--muted-foreground))] leading-relaxed">
+                    {module.detail}
+                  </p>
                 </div>
               </motion.div>
             );

@@ -1,6 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 import { ArrowRight, Shield, Clock, Gift, Play, Users, Star, BookOpen, Video, CheckCircle } from 'lucide-react';
 
 const fadeInUp = {
@@ -45,9 +46,9 @@ export const Hero = () => {
             className="text-4xl font-bold tracking-tight text-[hsl(var(--espresso))] sm:text-5xl lg:text-6xl"
             style={{ lineHeight: 1.1 }}
           >
-            Um guia completo de{' '}
+           O seu guia completo para{' '} 
             <span className="bg-gradient-to-r from-[hsl(var(--paprika))] to-[hsl(var(--espresso))] bg-clip-text text-transparent">
-              Cabelos Naturais
+              cabelos naturais 
             </span>{' '}
             nos EUA
           </motion.h1>
@@ -56,7 +57,7 @@ export const Hero = () => {
             variants={fadeInUp}
             className="mx-auto mt-6 max-w-2xl text-lg text-[hsl(var(--muted-foreground))] leading-relaxed"
           >
-            Aprenda a cuidar dos seus cachos com os produtos certos, entendendo a realidade do clima, da água e do mercado americano.
+            Aprenda a cuidar dos seus cabelos cacheados, ondulados ou crespos com os produtos certos no mercado americano.
           </motion.p>
 
           <motion.div
@@ -80,13 +81,13 @@ export const Hero = () => {
             </div>
           </motion.div>
 
-          <motion.p 
+          {/* <motion.p 
             variants={fadeInUp}
             className="mx-auto mt-6 max-w-2xl text-lg text-[hsl(var(--muted-foreground))] leading-relaxed"
           >
             Guia completo com diagnóstico capilar, cronograma personalizado, curadoria de produtos 
             acessíveis e protocolos para clima, água e rotina norte-americana.
-          </motion.p>
+          </motion.p> */}
 
         </motion.div>
 
@@ -116,22 +117,7 @@ export const Hero = () => {
             
           </motion.div>
 
-          <motion.div 
-            variants={fadeInUp}
-            className="mt-8 grid grid-cols-3 gap-4 max-w-lg mx-auto"
-          >
-            {[
-              { icon: Gift, label: 'Bônus', value: '2 inclusos' },
-              { icon: Users, label: 'Comunidade', value: 'Telegram' },
-              { icon: Play, label: 'Conteúdo', value: '+6 horas' },
-            ].map((item) => (
-              <div key={item.label} className="rounded-xl border border-[hsl(var(--border))] bg-white/80 p-3 text-center">
-                <item.icon className="mx-auto h-5 w-5 text-[hsl(var(--paprika))]" />
-                <p className="mt-1 text-xs font-semibold text-[hsl(var(--espresso))]">{item.value}</p>
-                <p className="text-xs text-[hsl(var(--muted-foreground))]">{item.label}</p>
-              </div>
-            ))}
-          </motion.div>
+       
         </motion.div>
 
         <motion.div

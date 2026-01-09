@@ -20,10 +20,9 @@ const stagger = {
 
 export const FinalCTA = () => {
   const benefits = [
-    'Guia completo + planilhas interativas',
+    'Guia completo incluindo curadoria com lista de produtos',
     'Biblioteca em vídeo 4K atualizada',
-    'Comunidade privada e hotline com Monik',
-    'Atualizações constantes + bônus futuros',
+    'Bônus futuros',
   ];
 
   return (
@@ -44,11 +43,10 @@ export const FinalCTA = () => {
               Sua transformação começa agora
             </p>
             <h2 className="mt-4 text-4xl font-bold tracking-tight sm:text-5xl leading-tight">
-              Um guia completo de Cabelos Naturais nos EUA
+              O seu guia completo para cabelos naturais nos EUA
             </h2>
             <p className="mt-6 text-lg text-[hsl(var(--linen)/0.8)]">
-              Garanta acesso imediato ao guia, bônus, comunidade e acompanhamento 
-              direto da Monik. Método completo por um valor especial.
+              Garanta acesso imediato ao guia e aos bônus para conquistar sua autonomia no cuidado com seus cabelos naturais. Um material desenvolvido para te dar segurança e te devolver a liberdade de cuidar do seu cabelo aqui nos EUA. Preço especial por tempo limitado!
             </p>
             
             <div className="mt-8 space-y-3">
@@ -69,7 +67,7 @@ export const FinalCTA = () => {
           >
             <div className="absolute -inset-4 rounded-3xl bg-gradient-to-br from-[hsl(var(--paprika)/0.4)] to-[hsl(var(--sage)/0.2)] blur-2xl" />
             
-            <div className="relative overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-8 backdrop-blur-xl">
+            <div className="relative overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-8 max-md:p-4 backdrop-blur-xl">
               <div className="absolute -right-20 -top-20 h-40 w-40 rounded-full bg-[hsl(var(--paprika)/0.2)] blur-3xl" />
               
               <div className="relative text-center">
@@ -88,18 +86,16 @@ export const FinalCTA = () => {
                     <span className="text-2xl font-semibold text-white/80">$</span>
                     <span className="text-7xl font-black tracking-tight text-white">47</span>
                   </div>
-                  <p className="mt-2 text-white/70">
-                    ou <span className="font-semibold text-white">12x de $4,70</span>
-                  </p>
+                  
                 </div>
 
                 <a
                   href="https://pay.hotmart.com/W99081498V?checkoutMode=10"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group mt-8 flex w-full items-center justify-center gap-2 rounded-full bg-white py-4 text-base font-bold text-[hsl(var(--espresso))] transition-all hover:scale-[1.02] hover:shadow-lg"
+                  className="group mt-8 flex w-full items-center justify-center gap-2 rounded-full bg-white py-4 max-md:px-4 text-base font-bold text-[hsl(var(--espresso))] transition-all hover:scale-[1.02] hover:shadow-lg"
                 >
-                  Quero o método completo
+                  QUERO TER ACESSO AO GUIA COMPLETO AGORA
                   <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
                 </a>
                 
