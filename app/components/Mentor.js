@@ -110,7 +110,7 @@ export const Mentor = () => {
                 {
                   icon: BookOpen,
                   title: 'Formação',
-                  desc: 'Cosmetologia e Tricologia com certificações no Brasil e nos EUA.'
+                  desc: 'Cosmetologista com certificações no Brasil e nos EUA.'
                 }
               ].map((item) => (
                 <div key={item.title} className="rounded-xl border border-[hsl(var(--linen)/0.1)] bg-[hsl(var(--linen)/0.05)] p-4">

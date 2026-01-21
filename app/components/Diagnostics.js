@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion';
 import Image from 'next/image';
-import { CircleDot, Lightbulb } from 'lucide-react';
+import { ShoppingCart, BookOpen, Tag, Store, ArrowRight } from 'lucide-react';
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 30 },
@@ -19,21 +19,26 @@ const stagger = {
   },
 };
 
-const diagnosticPoints = [
+const guideTeaches = [
   {
-    title: 'Espessura do Fio',
-    question: 'Pegue um fio e esfregue entre os dedos. O que você sente?',
-    options: ['Mal sinto o fio (Fino)', 'Sinto levemente, firme (Médio)', 'Sinto bem, é áspero (Grosso)'],
+    icon: BookOpen,
+    title: 'Ler Rótulos',
+    description: 'Como ler rótulos de produtos americanos e entender o que realmente funciona.',
   },
   {
-    title: 'Porosidade',
-    question: 'Como seu cabelo reage à água e produtos?',
-    options: ['Seca muito rápido', 'Embora com facilidade', 'Produtos não definem'],
+    icon: Tag,
+    title: 'Ingredientes Certos',
+    description: 'Quais ingredientes funcionam de verdade aqui nos EUA.',
   },
   {
-    title: 'Couro Cabeludo',
-    question: 'Qual a característica principal da sua raiz?',
-    options: ['Brilho excessivo (Oleoso)', 'Coceira e descamação (Seco)', 'Equilibrada (Normal)'],
+    icon: ShoppingCart,
+    title: 'Marcas que Funcionam',
+    description: 'Quais marcas populares dos EUA não funcionam para cacheadas.',
+  },
+  {
+    icon: Store,
+    title: 'Rotina Acessível',
+    description: 'Como montar uma rotina eficaz usando produtos acessíveis de Target, Walmart, Amazon e Marshalls.',
   },
 ];
 
@@ -49,13 +54,13 @@ export const Diagnostics = () => {
           viewport={{ once: true, amount: 0.3 }}
         >
           <motion.p variants={fadeInUp} className="text-subtle">
-            Diagnóstico Rápido
+            PARE DE DESPERDIÇAR DINHEIRO
           </motion.p>
           <motion.h2 variants={fadeInUp} className="heading-section mt-4 text-balance">
-            Faça seu Diagnóstico Capilar em Casa
+            Chega de gastar dinheiro com produtos errados
           </motion.h2>
           <motion.p variants={fadeInUp} className="text-body mx-auto mt-6 max-w-2xl text-balance">
-            Responda às perguntas abaixo para montar seu perfil capilar e entender o que seu cabelo realmente precisa.
+            Nos EUA, as prateleiras são enormes e confusas com produtos muito bons e outros de péssima qualidade.
           </motion.p>
         </motion.div>
 
@@ -66,43 +71,25 @@ export const Diagnostics = () => {
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
         >
-          <motion.div className="grid gap-6 md:grid-cols-3">
-            {diagnosticPoints.map((point, i) => (
-              <div key={point.title} className="card-base shadow-soft h-full flex flex-col">
-                <div className="flex items-center gap-3">
-                  <span className="flex h-8 w-8 items-center justify-center rounded-full bg-gradient-cta text-sm font-bold text-white">
-                    {i + 1}
-                  </span>
-                  <h3 className="heading-card text-lg">{point.title}</h3>
+          <motion.div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+            {guideTeaches.map((item, i) => {
+              const Icon = item.icon;
+              return (
+                <div key={item.title} className="card-base shadow-soft h-full flex flex-col">
+                  <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-cta mb-4">
+                    <Icon className="h-6 w-6 text-white" />
+                  </div>
+                  <h3 className="heading-card text-lg">{item.title}</h3>
+                  <p className="text-body mt-3 text-sm">{item.description}</p>
                 </div>
-                <p className="text-body mt-3 text-sm">{point.question}</p>
-                <div className="space-y-2 mt-auto">
-                  {point.options.map(option => (
-                    <div 
-                      key={option} 
-                      className="flex items-center gap-3 rounded-xl border border-[hsl(var(--border))] bg-[hsl(var(--cream))] p-3 transition-colors hover:border-[hsl(var(--paprika)/0.3)] hover:bg-[hsl(var(--paprika)/0.05)]"
-                    >
-                      <CircleDot className="h-4 w-4 text-[hsl(var(--paprika))]" />
-                      <span className="text-sm text-[hsl(var(--muted-foreground))]">{option}</span>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            ))}
+              );
+            })}
           </motion.div>
 
-          <motion.div variants={fadeInUp} className="card-base max-w-xl mx-auto border-[hsl(var(--olive)/0.3)] bg-[hsl(var(--olive)/0.05)] shadow-soft">
-            <div className="flex items-start gap-4">
-              <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-[hsl(var(--olive)/0.15)]">
-                <Lightbulb className="h-5 w-5 text-[hsl(var(--olive))]" />
-              </div>
-              <div>
-                <p className="font-semibold text-[hsl(var(--espresso))]">Dica importante</p>
-                <p className="mt-1 text-sm text-[hsl(var(--muted-foreground))]">
-                  Guarde essas informações para escolher os produtos ideais para você dentro do guia!
-                </p>
-              </div>
-            </div>
+          <motion.div variants={fadeInUp} className="card-base max-w-2xl mx-auto border-[hsl(var(--paprika)/0.3)] bg-[hsl(var(--paprika)/0.05)] shadow-soft">
+            <p className="text-center text-xl font-bold text-[hsl(var(--espresso))]">
+              &ldquo;Menos tentativa e erro. Mais resultado.&rdquo;
+            </p>
           </motion.div>
         </motion.div>
 
@@ -117,8 +104,8 @@ export const Diagnostics = () => {
             href="#oferta"
             className="btn-primary group"
           >
-            Quero Meu Diagnóstico
-            <CircleDot className="h-5 w-5 transition-transform group-hover:translate-x-1" />
+            Quero o Guia Completo
+            <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
           </a>
         </motion.div>
       </div>

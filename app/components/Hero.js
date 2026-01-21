@@ -46,18 +46,18 @@ export const Hero = () => {
             className="text-4xl font-bold tracking-tight text-[hsl(var(--espresso))] sm:text-5xl lg:text-6xl"
             style={{ lineHeight: 1.1 }}
           >
-           O seu guia completo para{' '} 
+           Aprenda a cuidar do seu{' '} 
             <span className="bg-gradient-to-r from-[hsl(var(--paprika))] to-[hsl(var(--espresso))] bg-clip-text text-transparent">
-              cabelos naturais 
+              cabelo natural 
             </span>{' '}
-            nos EUA
+            morando nos EUA
           </motion.h1>
 
           <motion.p 
             variants={fadeInUp}
             className="mx-auto mt-6 max-w-2xl text-lg text-[hsl(var(--muted-foreground))] leading-relaxed"
           >
-            Aprenda a cuidar dos seus cabelos cacheados, ondulados ou crespos com os produtos certos no mercado americano.
+            Um guia prático completo para quem tem cabelos cacheados, ondulados ou crespos.
           </motion.p>
 
           <motion.div

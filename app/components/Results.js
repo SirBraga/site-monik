@@ -68,7 +68,7 @@ export const Results = () => {
             Histórias de transformação nos EUA
           </motion.h2>
           <motion.p variants={fadeInUp} className="text-body mx-auto mt-6 max-w-2xl text-balance">
-            Mulheres brasileiras plenamente realizadas com seus cabelos naturais em qualquer estação graças às técnicas e à curadoria do guia Juba Natural Hair.
+            Mulheres brasileiras plenamente realizadas com seus cabelos naturais graças às técnicas e à curadoria do guia Juba Natural Hair.
           </motion.p>
         </motion.div>
 

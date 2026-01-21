@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Search, Wand2, Palette, Check, ArrowRight } from 'lucide-react';
+import { Droplets, Clock, ShoppingBag, Scale, Check, ArrowRight } from 'lucide-react';
 import Image from 'next/image';
 import { methodSteps } from '../data';
 
@@ -38,7 +38,7 @@ const stagger = {
   },
 };
 
-const icons = [Search, Wand2, Palette];
+const icons = [Droplets, Clock, ShoppingBag, Scale];
 
 export const Method = () => {
   return (
@@ -56,13 +56,13 @@ export const Method = () => {
           viewport={{ once: true, amount: 0.3 }}
         >
           <motion.p variants={fadeInUp} className="text-subtle">
-            OS CUIDADOS QUE OS SEUS CABELOS MERECEM
+            A REALIDADE QUE VOCÊ CONHECE BEM
           </motion.p>
           <motion.h2 variants={fadeInUp} className="heading-section mt-4 text-balance">
-            Diagnóstico, ritual e styling<br className="hidden sm:block" /> sem adivinhação
+            A realidade dos cabelos nos EUA:<br className="hidden sm:block" /> ressecado, áspero e sem definição
           </motion.h2>
           <motion.p variants={fadeInUp} className="text-body mx-auto mt-6 max-w-3xl text-balance">
-            Você não está fazendo nada de errado. Apenas não teve acesso às informações certas ainda. O guia traduz ciência capilar com sensibilidade brasileira.
+            Isso muda completamente os resultados do seu cuidado em casa.
           </motion.p>
         </motion.div>
 
@@ -98,7 +98,7 @@ export const Method = () => {
                         <h3 className="heading-card">{step.title}</h3>
                         <p className="text-body mt-2 text-sm" dangerouslySetInnerHTML={{ __html: step.description }} />
                         
-                        <ul className="mt-4 space-y-2">
+                        {/* <ul className="mt-4 space-y-2">
                           {step.items.map((item) => (
                             <li key={item} className="flex items-start gap-2">
                               <div className="mt-0.5 flex h-4 w-4 flex-shrink-0 items-center justify-center rounded-full bg-[hsl(var(--olive)/0.1)]">
@@ -107,7 +107,7 @@ export const Method = () => {
                               <span className="text-xs text-[hsl(var(--muted-foreground))]">{item}</span>
                             </li>
                           ))}
-                        </ul>
+                        </ul> */}
                       </div>
                     </div>
                   </motion.div>
@@ -118,14 +118,14 @@ export const Method = () => {
           </motion.div>
 
           <motion.div variants={fadeInRight} className="relative flex items-end h-full">
-            <div className="relative w-full h-full rounded-2xl bg-gradient-to-t from-[hsl(var(--linen)/0.3)] via-transparent to-transparent overflow-hidden">
-              <div className="absolute inset-0 bg-gradient-to-br from-[hsl(var(--paprika)/0.05)] to-[hsl(var(--olive)/0.05)]" />
+            <div className="relative w-full h-full rounded-2xl overflow-hidden">
+              <div className="absolute inset-0  " />
               <div className="relative w-full h-full">
                 <Image 
-                  src="/images/monik/method.webp"
-                  alt="Monik Santos - Especialista em cabelos naturais"
+                  src="/images/woman.webp"
+                  alt="Mulher frustrada com cabelo bagunçado - realidade dos cabelos nos EUA"
                   fill
-                  className="object-cover object-bottom drop-shadow-2xl"
+                  className="object-contain  drop-shadow-2xl rounded-2xl"
                   sizes="(max-width: 1024px) 100vw, 50vw"
                   priority
                 />

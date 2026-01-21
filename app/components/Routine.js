@@ -39,14 +39,22 @@ const stagger = {
 };
 
 export const Routine = () => {
-  const hairImages = [
+  const guideTeachings = [
     {
-      src: '/images/results/bela-modelo-sorridente-com-afro-cachos-penteado-vestido-com-vestido-branco-hipster-de-verao.webp',
-      alt: 'Cabelos cacheados naturais e saudáveis'
+      title: 'Finalizações Rápidas',
+      description: 'Finalizações rápidas para dias corridos'
     },
     {
-      src: '/images/results/bela-modelo-sorridente-com-afro-cachos-penteado-vestido-com-vestido-branco-hipster-de-verao (1) (1).webp',
-      alt: 'Cachos definidos e volumosos'
+      title: 'Anti-Frizz',
+      description: 'Técnicas para evitar frizz no day after'
+    },
+    {
+      title: 'Day After Perfeito',
+      description: 'Como ter um day after de 3 a 4 dias com o cabelo perfeito'
+    },
+    {
+      title: 'Seu Estilo de Vida',
+      description: 'Como adaptar o cabelo ao seu estilo de vida, não o contrário'
     }
   ];
 
@@ -64,49 +72,34 @@ export const Routine = () => {
           viewport={{ once: true, amount: 0.3 }}
         >
           <motion.p variants={fadeInUp} className="text-subtle">
-            Transformação Real
+            PRATICIDADE NO DIA A DIA
           </motion.p>
           <motion.h2 variants={fadeInUp} className="heading-section mt-4 text-balance">
-           Resultados Esperados
+           O guia ensina
           </motion.h2>
           <motion.p variants={fadeInUp} className="text-body mx-auto mt-6 max-w-2xl text-balance">
-            Descubra o potencial dos seus cachos com cuidados adequados e produtos certos para o seu tipo de cabelo.
+            Técnicas práticas para adaptar o cabelo ao seu estilo de vida, não o contrário.
           </motion.p>
         </motion.div>
 
         <motion.div
-          className="mt-16 grid gap-8 md:grid-cols-2"
+          className="mt-16 grid gap-6 md:grid-cols-2 lg:grid-cols-4"
           variants={stagger}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
         >
-          {hairImages.map((image, index) => (
+          {guideTeachings.map((item, index) => (
             <motion.div
               key={index}
-              variants={index === 0 ? fadeInLeft : fadeInRight}
-              className="group relative overflow-hidden rounded-3xl shadow-strong hover:shadow-xl transition-all duration-500"
+              variants={fadeInUp}
+              className="card-base group relative overflow-hidden shadow-soft hover:shadow-medium transition-all duration-300"
             >
-              <div className="relative aspect-video w-full">
-                <Image 
-                  src={image.src}
-                  alt={image.alt}
-                  fill
-                  className="object-cover transition-transform duration-700 group-hover:scale-105"
-                  sizes="(max-width: 768px) 100vw, 50vw"
-                  priority={index === 0}
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-[hsl(var(--espresso)/0.3)] via-transparent to-transparent opacity-60 group-hover:opacity-40 transition-opacity duration-500" />
-                
-                <div className="absolute bottom-0 left-0 right-0 p-6 transform translate-y-2 group-hover:translate-y-0 transition-transform duration-500">
-                  <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/95 backdrop-blur-sm shadow-lg">
-                    <Sparkles className="h-4 w-4 text-[hsl(var(--paprika))]" />
-                    <span className="text-sm font-semibold text-[hsl(var(--espresso))]">
-                      {index === 0 ? 'Cachos Definidos' : 'Volume Natural'}
-                    </span>
-                  </div>
-                </div>
+              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-cta mb-4">
+                <Sparkles className="h-6 w-6 text-white" />
               </div>
+              <h3 className="heading-card text-lg">{item.title}</h3>
+              <p className="text-body mt-3 text-sm">{item.description}</p>
             </motion.div>
           ))}
         </motion.div>

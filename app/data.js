@@ -14,22 +14,28 @@ export const heroHighlights = [
 
 export const methodSteps = [
   {
-    title: "Diagnóstico Atemporal",
+    title: "Água Dura (Hard Water)",
     description:
-      "Mapeie textura, porosidade, histórico químico e estilo de vida. O guia entrega scripts para entender seu cabelo em clima norte-americano.",
-    items: ["Teste rápido de porosidade", "Análise de densidade e espessura", "Checklist para histórico químico"],
+      "O que fazer para evitar os danos da água dura dos EUA no seu cabelo.",
+    items: ["Proteção contra minerais", "Tratamentos específicos", "Produtos que neutralizam"],
   },
   {
-    title: "Ritual Inteligente",
+    title: "Cronograma Realista",
     description:
-      "Rotinas modulares para manhã, noite e dias de correria. Tudo guiado por <span class=\"italic\">timers</span> e combinações testadas e aprovadas.",
-    items: ["Cronograma semanal adaptável", "Day after em 12 minutos", "Finalização dividida em zonas"],
+      "Um cronograma realista para quem não tem tempo de ficar horas cuidando do cabelo.",
+    items: ["Rotina simplificada", "Adaptado à vida corrida", "Resultados consistentes"],
   },
   {
-    title: "Styling & Performance",
+    title: "Produtos Profissionais",
     description:
-      "Sequências em vídeo em 4K com finalizações para 2A até 4C, protocolos anti-frizz e hacks para águas duras e ventos gelados.",
-    items: ["Finger Coil Signature", "Wash & Go em 40 min", "Proteção noturna completa"],
+      "Uma lista de produtos profissionais (caríssimos no Brasil) que aqui você tem acesso a um preço baixíssimo.",
+    items: ["Marcas premium acessíveis", "Onde encontrar", "Custo-benefício real"],
+  },
+  {
+    title: "Equilíbrio Capilar",
+    description:
+      "Como saber quando nutrir, reconstruir ou acidificar sem exagerar.",
+    items: ["Sinais do cabelo", "Frequência ideal", "Evitar sobrecarga"],
   },
 ];
 
