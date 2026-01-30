@@ -15,9 +15,9 @@ export default function Home() {
       <Hero />
       <Mentor />
       <Method />
+      <Results />
       <Diagnostics />
       <Routine />
-      <Results />
       <Content />
       <Bonuses />
       <Faq />

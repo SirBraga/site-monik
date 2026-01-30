@@ -67,7 +67,7 @@ export const Method = () => {
         </motion.div>
 
         <motion.div
-          className="mt-16 grid gap-12 lg:grid-cols-2 lg:items-end"
+          className="mt-16 grid lg:grid-cols-2 lg:items-end"
           variants={stagger}
           initial="hidden"
           whileInView="visible"
@@ -92,9 +92,6 @@ export const Method = () => {
                       </div>
                       
                       <div className="flex-1">
-                        <div className="flex items-center gap-2 mb-2">
-                          <span className="text-subtle text-xs">Passo {i + 1}</span>
-                        </div>
                         <h3 className="heading-card">{step.title}</h3>
                         <p className="text-body mt-2 text-sm" dangerouslySetInnerHTML={{ __html: step.description }} />
                         

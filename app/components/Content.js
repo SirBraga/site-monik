@@ -36,7 +36,7 @@ export const Content = () => {
             Resultado final que você encontra<br className="hidden sm:block" /> ao adquirir o guia
           </motion.h2>
           <motion.p variants={fadeInUp} className="text-body mx-auto mt-6 max-w-2xl text-balance">
-            Seu cabelo não é o problema. Ele só precisa de cuidados adaptados à vida nos EUA.
+            Liberdade será: Você se olhar no espelho e se sentir linda de cabelos naturais.
           </motion.p>
         </motion.div>
         

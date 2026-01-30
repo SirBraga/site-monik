@@ -83,7 +83,7 @@ export const Mentor = () => {
 
           <motion.div variants={fadeInRight} className="text-white">
             <p className="text-subtle !text-[hsl(var(--sage))]">
-              EXPERIENCIA COMPROVADA NO MERCADO NORTE-AMERICANO
+              EXPERIÊNCIA COMPROVADA NO MERCADO NORTE-AMERICANO
             </p>
             <p className="text-lg mt-4 text-white">
               Muito prazer, eu sou

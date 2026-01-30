@@ -33,7 +33,7 @@ const guideTeaches = [
   {
     icon: ShoppingCart,
     title: 'Marcas que Funcionam',
-    description: 'Quais marcas populares dos EUA não funcionam para cacheadas.',
+    description: 'Conheça quais as marcas dos EUA que funcionam de verdade.',
   },
   {
     icon: Store,
@@ -86,10 +86,14 @@ export const Diagnostics = () => {
             })}
           </motion.div>
 
-          <motion.div variants={fadeInUp} className="card-base max-w-2xl mx-auto border-[hsl(var(--paprika)/0.3)] bg-[hsl(var(--paprika)/0.05)] shadow-soft">
+          {/* <motion.div variants={fadeInUp} className="card-base max-w-2xl mx-auto border-[hsl(var(--paprika)/0.3)] bg-[hsl(var(--paprika)/0.05)] shadow-soft">
             <p className="text-center text-xl font-bold text-[hsl(var(--espresso))]">
               &ldquo;Menos tentativa e erro. Mais resultado.&rdquo;
             </p>
+          </motion.div> */}
+
+          <motion.div variants={fadeInUp} className="h-120 w-auto mx-auto relative shadow-soft">
+            <Image src="/images/foto loja.webp" alt="quote" fill className="object-cover w-full h-full rounded-3xl" />
           </motion.div>
         </motion.div>
 

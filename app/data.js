@@ -32,9 +32,8 @@ export const methodSteps = [
     items: ["Marcas premium acessíveis", "Onde encontrar", "Custo-benefício real"],
   },
   {
-    title: "Equilíbrio Capilar",
-    description:
-      "Como saber quando nutrir, reconstruir ou acidificar sem exagerar.",
+    title: "Finalizações com durabilidade",
+    description: "Para quem busca cachos definidos e duradouros",
     items: ["Sinais do cabelo", "Frequência ideal", "Evitar sobrecarga"],
   },
 ];
@@ -118,8 +117,8 @@ export const modules = [
 export const bonuses = [
   {
     label: "Calendário",
-    title: "Calendário personalizado do cronograma capilar",
-    description: "Organize sua rotina capilar com um calendário prático que se adapta ao seu estilo de vida e necessidades dos seus fios.",
+    title: "Sugestões de cortes ideais para você",
+    description: "Cansada de ficar perdida sem saber qual corte combina com seu rosto e seu cabelo? Nesse bônus, você aprende exatamente quais estilos te favorecem e como pedir o corte certo.",
     value: "Incluso",
   },
     {
