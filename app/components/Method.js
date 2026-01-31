@@ -59,7 +59,7 @@ export const Method = () => {
             A REALIDADE QUE VOCÊ CONHECE BEM
           </motion.p>
           <motion.h2 variants={fadeInUp} className="heading-section mt-4 text-balance">
-            A realidade dos cabelos nos EUA:<br className="hidden sm:block" /> ressecado, áspero e sem definição
+            A realidade dos cabelos nos EUA:<br className="hidden sm:block" /> ressecados, ásperos e sem definição
           </motion.h2>
           <motion.p variants={fadeInUp} className="text-body mx-auto mt-6 max-w-3xl text-balance">
             Isso muda completamente os resultados do seu cuidado em casa.

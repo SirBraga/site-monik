@@ -16,7 +16,7 @@ export const methodSteps = [
   {
     title: "Água Dura (Hard Water)",
     description:
-      "O que fazer para evitar os danos da água dura dos EUA no seu cabelo.",
+      "O que fazer para evitar os danos desse tipo de água no seu cabelo.",
     items: ["Proteção contra minerais", "Tratamentos específicos", "Produtos que neutralizam"],
   },
   {
@@ -28,7 +28,7 @@ export const methodSteps = [
   {
     title: "Produtos Profissionais",
     description:
-      "Uma lista de produtos profissionais (caríssimos no Brasil) que aqui você tem acesso a um preço baixíssimo.",
+      "Uma lista de produtos profissionais que servem para o seu cabelo.",
     items: ["Marcas premium acessíveis", "Onde encontrar", "Custo-benefício real"],
   },
   {
@@ -180,7 +180,7 @@ export const faqs = [
   },
   {
     q: "Funciona para todas as curvaturas?",
-    a: "Sim. Os protocolos atendem 2A a 4C com tabelas específicas e triggers para ajustar conforme o clima.",
+    a: "Sim. Os protocolos atendem 2A a 4C com tabelas específicas e triggers (gatilhos) para ajustar conforme o clima.",
   },
   {
     q: "E se eu não gostar?",

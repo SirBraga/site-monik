@@ -22,7 +22,7 @@ export const FinalCTA = () => {
   const benefits = [
     'Guia completo incluindo curadoria com lista de produtos',
     'Biblioteca em vídeo 4K atualizada',
-    'Bônus futuros',
+    'Bônus exclusivos',
   ];
 
   return (

@@ -23,7 +23,7 @@ const guideTeaches = [
   {
     icon: BookOpen,
     title: 'Ler Rótulos',
-    description: 'Como ler rótulos de produtos americanos e entender o que realmente funciona.',
+    description: 'Como interpretar rótulos de produtos americanos e entender o que realmente funciona.',
   },
   {
     icon: Tag,
@@ -33,7 +33,7 @@ const guideTeaches = [
   {
     icon: ShoppingCart,
     title: 'Marcas que Funcionam',
-    description: 'Conheça quais as marcas dos EUA que funcionam de verdade.',
+    description: 'Conheça quais as marcas dos EUA que entregam um resultado maravilhoso.',
   },
   {
     icon: Store,
