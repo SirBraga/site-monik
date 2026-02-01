@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion';
 import Image from 'next/image';
-import { Calendar, Sparkles, Video, Gift, Play } from 'lucide-react';
+import { Calendar, Sparkles, Video, Gift, Play, Scissors } from 'lucide-react';
 import { bonuses } from '../data';
 
 const fadeInUp = {
@@ -21,7 +21,7 @@ const stagger = {
 };
 
 const bonusIcons = {
-  "Calendário": Calendar,
+  "Corte Ideal": Scissors,
   "Penteados": Sparkles,
 };
 

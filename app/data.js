@@ -116,7 +116,7 @@ export const modules = [
 
 export const bonuses = [
   {
-    label: "Calendário",
+    label: "Corte Ideal",
     title: "Sugestões de cortes ideais para você",
     description: "Cansada de ficar perdida sem saber qual corte combina com seu rosto e seu cabelo? Nesse bônus, você aprende exatamente quais estilos te favorecem e como pedir o corte certo.",
     value: "Incluso",
