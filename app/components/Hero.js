@@ -139,10 +139,7 @@ export const Hero = () => {
                 <Shield className="h-4 w-4 text-[hsl(var(--olive))]" />
                 7 dias de garantia
               </span>
-              <span className="flex items-center gap-1.5">
-                <Clock className="h-4 w-4 text-[hsl(var(--olive))]" />
-                Acesso vitalício
-              </span>
+             
             </div>
           </motion.div>
 

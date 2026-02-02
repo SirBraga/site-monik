@@ -90,7 +90,7 @@ export const FinalCTA = () => {
                 </div>
 
                 <a
-                  href="https://pay.hotmart.com/W99081498V?checkoutMode=10"
+                  href="https://pay.hotmart.com/I103599333T?bid=1770042403468"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="group mt-8 flex w-full items-center justify-center gap-2 rounded-full bg-white py-4 max-md:px-4 text-base font-bold text-[hsl(var(--espresso))] transition-all hover:scale-[1.02] hover:shadow-lg"
@@ -99,7 +99,7 @@ export const FinalCTA = () => {
                   <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
                 </a>
                 
-                <div className="mt-6 grid grid-cols-2 gap-3">
+                <div className="mt-6 grid grid-cols-1 gap-3">
                   <div className="flex items-center justify-center gap-2 rounded-xl bg-white/5 p-3">
                     <Shield className="h-4 w-4 text-[hsl(var(--sage))]" />
                     <div className="text-left">
@@ -107,13 +107,7 @@ export const FinalCTA = () => {
                       <p className="text-xs text-white/60">Garantia</p>
                     </div>
                   </div>
-                  <div className="flex items-center justify-center gap-2 rounded-xl bg-white/5 p-3">
-                    <Clock className="h-4 w-4 text-[hsl(var(--sage))]" />
-                    <div className="text-left">
-                      <p className="text-xs font-semibold text-white">Vitalício</p>
-                      <p className="text-xs text-white/60">Acesso</p>
-                    </div>
-                  </div>
+                  
                 </div>
               </div>
             </div>

@@ -8,7 +8,6 @@ export const palette = {
 
 export const heroHighlights = [
   "Garantia de 7 dias",
-  "Acesso vitalício",
   "Bônus liberados na hora",
 ];
 
