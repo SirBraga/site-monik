@@ -65,7 +65,7 @@ export const Method = () => {
             Isso muda completamente os resultados do seu cuidado em casa.
           </motion.p>
 
-          <motion.p variants={fadeInUp} className="relative w-auto h-68 rounded-2xl mx-auto mt-6 max-w-3xl text-balance">
+          <motion.p variants={fadeInUp} className="relative w-auto md:hidden h-68 rounded-2xl mx-auto mt-6 max-w-3xl text-balance">
             <Image 
             src="/images/woman-hair-mobile.webp"
             alt="Realidade dos cabelos nos EUA"

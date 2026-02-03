@@ -8,6 +8,7 @@ const inter = Inter({
 });
 
 export const metadata = {
+  metadataBase: new URL('https://jubanaturalhair.com'),
   title: {
     default: 'Juba Natural Hair | Guia Completo para Cabelos Cacheados nos EUA',
     template: '%s | Juba Natural Hair',
@@ -40,9 +41,9 @@ export const metadata = {
     siteName: 'Juba Natural Hair',
     images: [
       {
-        url: 'https://jubanaturalhair.com/images/og-image.png',
-        width: 1200,
-        height: 630,
+        url: '/images/og-image.png',
+        width: 1613,
+        height: 859,
         alt: 'Juba Natural Hair - Guia para Cabelos Cacheados nos EUA',
       },
     ],
@@ -51,7 +52,7 @@ export const metadata = {
     card: 'summary_large_image',
     title: 'Juba Natural Hair | Guia Completo para Cabelos Cacheados nos EUA',
     description: 'O método brasileiro definitivo para cuidar de cabelos cacheados e crespos nos Estados Unidos.',
-    images: ['https://jubanaturalhair.com/images/og-image.png'],
+    images: ['/images/og-image.png'],
   },
 };
 
