@@ -14,6 +14,23 @@ const nextConfig = {
   // Compressão
   compress: true,
 
+  // Redirecionamentos
+  async redirects() {
+    return [
+      {
+        source: '/:path*',
+        has: [
+          {
+            type: 'host',
+            value: 'jubanaturalhair.com',
+          },
+        ],
+        destination: 'https://www.jubanaturalhair.com/:path*',
+        permanent: true,
+      },
+    ];
+  },
+
   // Headers de segurança e performance
   async headers() {
     return [
@@ -73,9 +90,6 @@ const nextConfig = {
 
   // Remover powered-by header
   poweredByHeader: false,
-
-  // Otimização de build
-  swcMinify: true,
 
   // Experimental features para performance
   experimental: {

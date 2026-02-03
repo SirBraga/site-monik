@@ -1,14 +1,14 @@
 import { Inter } from 'next/font/google';
 import './globals.css';
 
-const inter = Inter({ 
+const inter = Inter({
   subsets: ['latin'],
   display: 'swap',
   variable: '--font-inter',
 });
 
 export const metadata = {
-  metadataBase: new URL('https://jubanaturalhair.com'),
+  metadataBase: new URL('https://www.jubanaturalhair.com'),
   title: {
     default: 'Juba Natural Hair | Guia Completo para Cabelos Cacheados nos EUA',
     template: '%s | Juba Natural Hair',
@@ -35,13 +35,13 @@ export const metadata = {
   openGraph: {
     type: 'website',
     locale: 'pt_BR',
-    url: 'https://jubanaturalhair.com',
+    url: 'https://www.jubanaturalhair.com',
     title: 'Juba Natural Hair | Guia Completo para Cabelos Cacheados nos EUA',
     description: 'O método brasileiro definitivo para cuidar de cabelos cacheados e crespos nos Estados Unidos.',
     siteName: 'Juba Natural Hair',
     images: [
       {
-        url: '/images/og-image.png',
+        url: 'https://www.jubanaturalhair.com/images/og-image.png',
         width: 1613,
         height: 859,
         alt: 'Juba Natural Hair - Guia para Cabelos Cacheados nos EUA',
@@ -52,7 +52,7 @@ export const metadata = {
     card: 'summary_large_image',
     title: 'Juba Natural Hair | Guia Completo para Cabelos Cacheados nos EUA',
     description: 'O método brasileiro definitivo para cuidar de cabelos cacheados e crespos nos Estados Unidos.',
-    images: ['/images/og-image.png'],
+    images: ['https://www.jubanaturalhair.com/images/og-image.png'],
   },
 };
 

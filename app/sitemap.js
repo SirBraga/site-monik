@@ -1,6 +1,6 @@
 export default function sitemap() {
-  const baseUrl = 'https://jubanaturalhair.com';
-  
+  const baseUrl = 'https://www.jubanaturalhair.com';
+
   return [
     {
       url: baseUrl,

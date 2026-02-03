@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://jubanaturalhair.com
+Host: https://www.jubanaturalhair.com
 
 # Sitemaps
-Sitemap: https://jubanaturalhair.com/sitemap.xml
+Sitemap: https://www.jubanaturalhair.com/sitemap.xml
